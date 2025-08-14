@@ -1,0 +1,1745 @@
+[
+  {
+    "food_name": "Abacha and Ugba(african salad)",
+    "ingredients": [
+      "cassava flakes (abacha)",
+      "ugba (oil bean)",
+      "palm oil",
+      "potash",
+      "ground crayfish",
+      "shredded stockfish",
+      "garden egg",
+      "utazi leaves",
+      "onions",
+      "ground pepper",
+      "salt",
+      "seasoning cube"
+    ],
+    "allergens": [
+      "legumes",
+      "crayfish",
+      "stockfish",
+      "palm_oil",
+      "pepper"
+    ],
+    "probabilities": {
+      "legumes": 1.0,
+      "crayfish": 1.0,
+      "stockfish": 1.0,
+      "palm_oil": 1.0,
+      "pepper": 1.0
+    },
+    "symptoms": {
+      "legumes": [
+        "stomach cramps",
+        "skin rash"
+      ],
+      "crayfish": [
+        "skin rash",
+        "stomach cramps",
+        "throat tightness"
+      ],
+      "stockfish": [
+        "skin itching",
+        "lip swelling",
+        "abdominal pain"
+      ],
+      "palm_oil": [
+        "stomach upset",
+        "skin redness"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ]
+    },
+    "replacements": [
+      "Abacha (no ugba & no crayfish)"
+    ]
+  },
+  {
+    "food_name": "Akara and Eko",
+    "ingredients": [
+      "black-eyed beans",
+      "onions",
+      "fresh pepper",
+      "salt",
+      "vegetable oil",
+      "eko/ogi (fermented corn pudding)"
+    ],
+    "allergens": [
+      "legumes",
+      "pepper",
+      "maize"
+    ],
+    "probabilities": {
+      "legumes": 1.0,
+      "pepper": 1.0,
+      "maize": 1.0
+    },
+    "symptoms": {
+      "legumes": [
+        "stomach cramps",
+        "skin rash"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ],
+      "maize": [
+        "stomach cramps",
+        "diarrhea",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Ojojo and Eko (water-yam fritters)"
+    ]
+  },
+  {
+    "food_name": "Amala and Gbegiri- Ewedu",
+    "ingredients": [
+      "amala (yam flour)",
+      "gbegiri (beans)",
+      "ewedu (jute leaves)",
+      "locust beans (iru)",
+      "palm oil",
+      "pepper",
+      "assorted meat"
+    ],
+    "allergens": [
+      "legumes",
+      "fermented_legumes",
+      "pepper",
+      "palm_oil",
+      "crayfish"
+    ],
+    "probabilities": {
+      "legumes": 1.0,
+      "fermented_legumes": 1.0,
+      "pepper": 1.0,
+      "palm_oil": 1.0,
+      "crayfish": 1.0
+    },
+    "symptoms": {
+      "legumes": [
+        "stomach cramps",
+        "skin rash"
+      ],
+      "fermented_legumes": [
+        "bloating",
+        "skin rash"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ],
+      "palm_oil": [
+        "stomach upset",
+        "skin redness"
+      ],
+      "crayfish": [
+        "skin rash",
+        "stomach cramps",
+        "throat tightness"
+      ]
+    },
+    "replacements": [
+      "Amala with Ewedu & Beef Stew (no gbegiri)"
+    ]
+  },
+  {
+    "food_name": "Asaro",
+    "ingredients": [
+      "yam",
+      "palm oil",
+      "onions",
+      "pepper",
+      "smoked fish",
+      "crayfish",
+      "seasoning",
+      "spinach (optional)"
+    ],
+    "allergens": [
+      "palm_oil",
+      "pepper",
+      "fish",
+      "crayfish"
+    ],
+    "probabilities": {
+      "palm_oil": 1.0,
+      "pepper": 1.0,
+      "fish": 1.0,
+      "crayfish": 1.0
+    },
+    "symptoms": {
+      "palm_oil": [
+        "stomach upset",
+        "skin redness"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ],
+      "fish": [
+        "hives",
+        "itchy skin",
+        "swelling of lips",
+        "nausea",
+        "vomiting"
+      ],
+      "crayfish": [
+        "skin rash",
+        "stomach cramps",
+        "throat tightness"
+      ]
+    },
+    "replacements": [
+      "Unripe Plantain Porridge"
+    ]
+  },
+  {
+    "food_name": "Boli(bole)",
+    "ingredients": [
+      "ripe plantain",
+      "pepper sauce (optional)"
+    ],
+    "allergens": [
+      "pepper"
+    ],
+    "probabilities": {
+      "pepper": 1.0
+    },
+    "symptoms": {
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ]
+    },
+    "replacements": [
+      "Roasted sweet potatoes"
+    ]
+  },
+  {
+    "food_name": "Chin Chin",
+    "ingredients": [
+      "wheat flour",
+      "sugar",
+      "butter",
+      "egg",
+      "milk",
+      "nutmeg",
+      "vegetable oil"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "egg",
+      "milk"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "egg": 1.0,
+      "milk": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Cassava-flour Chin Chin (gluten-free)"
+    ]
+  },
+  {
+    "food_name": "Egusi Soup",
+    "ingredients": [
+      "ground melon seed (egusi)",
+      "palm oil",
+      "crayfish",
+      "stockfish",
+      "beef",
+      "ugwu/spinach",
+      "pepper",
+      "onions",
+      "locust beans (iru)"
+    ],
+    "allergens": [
+      "crayfish",
+      "stockfish",
+      "palm_oil",
+      "pepper",
+      "fermented_legumes"
+    ],
+    "probabilities": {
+      "crayfish": 1.0,
+      "stockfish": 1.0,
+      "palm_oil": 1.0,
+      "pepper": 1.0,
+      "fermented_legumes": 1.0
+    },
+    "symptoms": {
+      "crayfish": [
+        "skin rash",
+        "stomach cramps",
+        "throat tightness"
+      ],
+      "stockfish": [
+        "skin itching",
+        "lip swelling",
+        "abdominal pain"
+      ],
+      "palm_oil": [
+        "stomach upset",
+        "skin redness"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ],
+      "fermented_legumes": [
+        "bloating",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Egusi Soup (no crayfish)"
+    ]
+  },
+  {
+    "food_name": "Ewa-Agoyin",
+    "ingredients": [
+      "beans",
+      "palm oil",
+      "dried pepper sauce",
+      "onions",
+      "salt"
+    ],
+    "allergens": [
+      "legumes",
+      "palm_oil",
+      "pepper"
+    ],
+    "probabilities": {
+      "legumes": 1.0,
+      "palm_oil": 1.0,
+      "pepper": 1.0
+    },
+    "symptoms": {
+      "legumes": [
+        "stomach cramps",
+        "skin rash"
+      ],
+      "palm_oil": [
+        "stomach upset",
+        "skin redness"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ]
+    },
+    "replacements": [
+      "Mashed yam with pepper sauce"
+    ]
+  },
+  {
+    "food_name": "Fried Plantains (dodo)",
+    "ingredients": [
+      "ripe plantain",
+      "vegetable oil",
+      "salt"
+    ],
+    "allergens": [],
+    "probabilities": {},
+    "symptoms": {},
+    "replacements": [
+      "Boli (roasted plantain)"
+    ]
+  },
+  {
+    "food_name": "Jollof Rice",
+    "ingredients": [
+      "rice",
+      "tomato puree",
+      "pepper",
+      "onions",
+      "vegetable oil",
+      "bay leaf",
+      "stock"
+    ],
+    "allergens": [
+      "tomato",
+      "pepper"
+    ],
+    "probabilities": {
+      "tomato": 1.0,
+      "pepper": 1.0
+    },
+    "symptoms": {
+      "tomato": [
+        "skin rash",
+        "stomach discomfort"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ]
+    },
+    "replacements": [
+      "Fried Rice (no tomato)"
+    ]
+  },
+  {
+    "food_name": "Meat-pie",
+    "ingredients": [
+      "wheat flour",
+      "butter",
+      "egg (wash)",
+      "milk (optional)",
+      "minced beef",
+      "potatoes",
+      "carrots",
+      "onions"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "egg",
+      "milk"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "egg": 1.0,
+      "milk": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Gluten-free Meat Pie (cassava crust)"
+    ]
+  },
+  {
+    "food_name": "Moin-Moin",
+    "ingredients": [
+      "peeled beans",
+      "pepper",
+      "onions",
+      "vegetable oil",
+      "egg (optional)",
+      "mackerel (optional)"
+    ],
+    "allergens": [
+      "legumes",
+      "pepper",
+      "egg",
+      "fish"
+    ],
+    "probabilities": {
+      "legumes": 1.0,
+      "pepper": 1.0,
+      "egg": 1.0,
+      "fish": 1.0
+    },
+    "symptoms": {
+      "legumes": [
+        "stomach cramps",
+        "skin rash"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ],
+      "fish": [
+        "hives",
+        "itchy skin",
+        "swelling of lips",
+        "nausea",
+        "vomiting"
+      ]
+    },
+    "replacements": [
+      "Ukpo Oka (corn pudding)"
+    ]
+  },
+  {
+    "food_name": "Nkwobi",
+    "ingredients": [
+      "cow foot",
+      "palm oil",
+      "potash",
+      "utazi leaves",
+      "pepper",
+      "ground crayfish",
+      "onions",
+      "seasoning"
+    ],
+    "allergens": [
+      "palm_oil",
+      "pepper",
+      "crayfish"
+    ],
+    "probabilities": {
+      "palm_oil": 1.0,
+      "pepper": 1.0,
+      "crayfish": 1.0
+    },
+    "symptoms": {
+      "palm_oil": [
+        "stomach upset",
+        "skin redness"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ],
+      "crayfish": [
+        "skin rash",
+        "stomach cramps",
+        "throat tightness"
+      ]
+    },
+    "replacements": [
+      "Peppered Cow Foot (no crayfish)"
+    ]
+  },
+  {
+    "food_name": "Okro Soup",
+    "ingredients": [
+      "okro",
+      "palm oil",
+      "pepper",
+      "onions",
+      "crayfish",
+      "stockfish",
+      "spinach/ugwu",
+      "locust beans (iru)"
+    ],
+    "allergens": [
+      "crayfish",
+      "stockfish",
+      "palm_oil",
+      "pepper",
+      "fermented_legumes"
+    ],
+    "probabilities": {
+      "crayfish": 1.0,
+      "stockfish": 1.0,
+      "palm_oil": 1.0,
+      "pepper": 1.0,
+      "fermented_legumes": 1.0
+    },
+    "symptoms": {
+      "crayfish": [
+        "skin rash",
+        "stomach cramps",
+        "throat tightness"
+      ],
+      "stockfish": [
+        "skin itching",
+        "lip swelling",
+        "abdominal pain"
+      ],
+      "palm_oil": [
+        "stomach upset",
+        "skin redness"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ],
+      "fermented_legumes": [
+        "bloating",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Ewedu Soup (no crayfish)"
+    ]
+  },
+  {
+    "food_name": "Pepper Soup",
+    "ingredients": [
+      "goat meat",
+      "pepper mix",
+      "scent leaf",
+      "ehuru (calabash nutmeg)",
+      "onions",
+      "seasoning"
+    ],
+    "allergens": [
+      "pepper"
+    ],
+    "probabilities": {
+      "pepper": 1.0
+    },
+    "symptoms": {
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ]
+    },
+    "replacements": [
+      "Goat Meat Pepper Soup (milder chili)"
+    ]
+  },
+  {
+    "food_name": "Puff-Puff",
+    "ingredients": [
+      "wheat flour",
+      "sugar",
+      "yeast",
+      "water",
+      "vegetable oil"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ]
+    },
+    "replacements": [
+      "Gluten-free Puff-Puff (cassava/rice flour)"
+    ]
+  },
+  {
+    "food_name": "Suya",
+    "ingredients": [
+      "beef",
+      "yaji spice (ground peanut, chili, ginger, garlic)",
+      "salt",
+      "vegetable oil"
+    ],
+    "allergens": [
+      "peanut",
+      "pepper"
+    ],
+    "probabilities": {
+      "peanut": 1.0,
+      "pepper": 1.0
+    },
+    "symptoms": {
+      "peanut": [
+        "hives",
+        "swelling of lips or face",
+        "difficulty breathing",
+        "anaphylaxis"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ]
+    },
+    "replacements": [
+      "Yaji-spiced grilled beef (no peanut powder)"
+    ]
+  },
+  {
+    "food_name": "Vegetable Soup",
+    "ingredients": [
+      "spinach/ugwu",
+      "palm oil",
+      "pepper",
+      "onions",
+      "locust beans (iru)",
+      "assorted meat",
+      "crayfish",
+      "stockfish"
+    ],
+    "allergens": [
+      "palm_oil",
+      "pepper",
+      "fermented_legumes",
+      "crayfish",
+      "stockfish"
+    ],
+    "probabilities": {
+      "palm_oil": 1.0,
+      "pepper": 1.0,
+      "fermented_legumes": 1.0,
+      "crayfish": 1.0,
+      "stockfish": 1.0
+    },
+    "symptoms": {
+      "palm_oil": [
+        "stomach upset",
+        "skin redness"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ],
+      "fermented_legumes": [
+        "bloating",
+        "skin rash"
+      ],
+      "crayfish": [
+        "skin rash",
+        "stomach cramps",
+        "throat tightness"
+      ],
+      "stockfish": [
+        "skin itching",
+        "lip swelling",
+        "abdominal pain"
+      ]
+    },
+    "replacements": [
+      "Efo Riro (no crayfish)"
+    ]
+  },
+  {
+    "food_name": "apple_pie",
+    "ingredients": [
+      "apples",
+      "wheat flour crust",
+      "butter",
+      "sugar",
+      "cinnamon",
+      "egg wash"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "milk",
+      "egg"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "milk": 1.0,
+      "egg": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ]
+    },
+    "replacements": [
+      "Gluten-free Apple Crumble"
+    ]
+  },
+  {
+    "food_name": "chicken_curry",
+    "ingredients": [
+      "chicken",
+      "onions",
+      "tomatoes",
+      "curry spices",
+      "yogurt (or coconut milk)"
+    ],
+    "allergens": [
+      "tomato",
+      "milk"
+    ],
+    "probabilities": {
+      "tomato": 1.0,
+      "milk": 1.0
+    },
+    "symptoms": {
+      "tomato": [
+        "skin rash",
+        "stomach discomfort"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Dairy-free Chicken Curry (coconut milk)"
+    ]
+  },
+  {
+    "food_name": "chicken_wings",
+    "ingredients": [
+      "chicken wings",
+      "soy sauce",
+      "garlic",
+      "ginger",
+      "pepper",
+      "honey"
+    ],
+    "allergens": [
+      "soy",
+      "pepper"
+    ],
+    "probabilities": {
+      "soy": 1.0,
+      "pepper": 1.0
+    },
+    "symptoms": {
+      "soy": [
+        "stomach upset",
+        "skin redness",
+        "asthma-like symptoms"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ]
+    },
+    "replacements": [
+      "Grilled Chicken Wings (no soy glaze)"
+    ]
+  },
+  {
+    "food_name": "cup_cakes",
+    "ingredients": [
+      "wheat flour",
+      "sugar",
+      "butter",
+      "milk",
+      "egg",
+      "baking powder"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "milk",
+      "egg"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "milk": 1.0,
+      "egg": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ]
+    },
+    "replacements": [
+      "Gluten-free Cupcakes (dairy-free)"
+    ]
+  },
+  {
+    "food_name": "falafel",
+    "ingredients": [
+      "chickpeas",
+      "onion",
+      "garlic",
+      "parsley",
+      "cumin",
+      "coriander",
+      "tahini sauce"
+    ],
+    "allergens": [
+      "legumes",
+      "sesame"
+    ],
+    "probabilities": {
+      "legumes": 1.0,
+      "sesame": 1.0
+    },
+    "symptoms": {
+      "legumes": [
+        "stomach cramps",
+        "skin rash"
+      ],
+      "sesame": [
+        "hives",
+        "swelling",
+        "shortness of breath",
+        "anaphylaxis"
+      ]
+    },
+    "replacements": [
+      "Ojojo (water-yam fritters)"
+    ]
+  },
+  {
+    "food_name": "fish_and_chips",
+    "ingredients": [
+      "white fish",
+      "wheat flour batter",
+      "potato chips",
+      "oil"
+    ],
+    "allergens": [
+      "fish",
+      "wheat",
+      "gluten"
+    ],
+    "probabilities": {
+      "fish": 1.0,
+      "wheat": 1.0,
+      "gluten": 1.0
+    },
+    "symptoms": {
+      "fish": [
+        "hives",
+        "itchy skin",
+        "swelling of lips",
+        "nausea",
+        "vomiting"
+      ],
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ]
+    },
+    "replacements": [
+      "Chicken Strips & Chips (gluten-free batter)"
+    ]
+  },
+  {
+    "food_name": "fried_rice",
+    "ingredients": [
+      "rice",
+      "carrots",
+      "peas",
+      "bell peppers",
+      "egg",
+      "spring onion",
+      "soy sauce"
+    ],
+    "allergens": [
+      "legumes",
+      "egg",
+      "soy"
+    ],
+    "probabilities": {
+      "legumes": 1.0,
+      "egg": 1.0,
+      "soy": 1.0
+    },
+    "symptoms": {
+      "legumes": [
+        "stomach cramps",
+        "skin rash"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ],
+      "soy": [
+        "stomach upset",
+        "skin redness",
+        "asthma-like symptoms"
+      ]
+    },
+    "replacements": [
+      "Coconut Fried Rice (no egg, no soy)"
+    ]
+  },
+  {
+    "food_name": "hamburger",
+    "ingredients": [
+      "beef patty",
+      "wheat bun",
+      "cheese",
+      "lettuce",
+      "tomato",
+      "mayonnaise",
+      "sesame seeds"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "milk",
+      "egg",
+      "sesame",
+      "tomato"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "milk": 1.0,
+      "egg": 1.0,
+      "sesame": 1.0,
+      "tomato": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ],
+      "sesame": [
+        "hives",
+        "swelling",
+        "shortness of breath",
+        "anaphylaxis"
+      ],
+      "tomato": [
+        "skin rash",
+        "stomach discomfort"
+      ]
+    },
+    "replacements": [
+      "Burger on Gluten-free Bun (no cheese)"
+    ]
+  },
+  {
+    "food_name": "hot_dog",
+    "ingredients": [
+      "sausage (processed meat)",
+      "wheat bun",
+      "ketchup",
+      "mustard",
+      "mayonnaise"
+    ],
+    "allergens": [
+      "processed_meat",
+      "wheat",
+      "gluten",
+      "egg",
+      "mustard"
+    ],
+    "probabilities": {
+      "processed_meat": 1.0,
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "egg": 1.0,
+      "mustard": 1.0
+    },
+    "symptoms": {
+      "processed_meat": [
+        "skin rash",
+        "headache",
+        "bloating"
+      ],
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ],
+      "mustard": [
+        "skin redness",
+        "runny nose"
+      ]
+    },
+    "replacements": [
+      "Hot Dog on Gluten-free Bun"
+    ]
+  },
+  {
+    "food_name": "ice_cream",
+    "ingredients": [
+      "milk",
+      "cream",
+      "sugar",
+      "vanilla"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "probabilities": {
+      "milk": 1.0
+    },
+    "symptoms": {
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Tigernut Milk Ice Cream"
+    ]
+  },
+  {
+    "food_name": "lasagna",
+    "ingredients": [
+      "wheat pasta sheets",
+      "tomato sauce",
+      "ground beef",
+      "mozzarella",
+      "ricotta"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "milk",
+      "tomato"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "milk": 1.0,
+      "tomato": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "tomato": [
+        "skin rash",
+        "stomach discomfort"
+      ]
+    },
+    "replacements": [
+      "Plantain Lasagna (dairy-free)"
+    ]
+  },
+  {
+    "food_name": "macaroni_and_cheese",
+    "ingredients": [
+      "macaroni (wheat)",
+      "cheddar cheese",
+      "milk",
+      "butter"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "milk"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "milk": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Gluten-free Pasta with Dairy-free Sauce"
+    ]
+  },
+  {
+    "food_name": "omelette",
+    "ingredients": [
+      "eggs",
+      "onions",
+      "peppers",
+      "salt",
+      "oil"
+    ],
+    "allergens": [
+      "egg",
+      "pepper"
+    ],
+    "probabilities": {
+      "egg": 1.0,
+      "pepper": 1.0
+    },
+    "symptoms": {
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ],
+      "pepper": [
+        "skin irritation",
+        "nasal congestion"
+      ]
+    },
+    "replacements": [
+      "Chickpea Flour Pancake (savory)"
+    ]
+  },
+  {
+    "food_name": "pancakes",
+    "ingredients": [
+      "wheat flour",
+      "milk",
+      "egg",
+      "sugar",
+      "butter",
+      "baking powder"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "milk",
+      "egg"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "milk": 1.0,
+      "egg": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ]
+    },
+    "replacements": [
+      "Plantain Pancakes (no flour)"
+    ]
+  },
+  {
+    "food_name": "pizza",
+    "ingredients": [
+      "wheat crust",
+      "tomato sauce",
+      "mozzarella",
+      "olive oil"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "milk",
+      "tomato"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "milk": 1.0,
+      "tomato": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "tomato": [
+        "skin rash",
+        "stomach discomfort"
+      ]
+    },
+    "replacements": [
+      "Cassava-crust Pizza (no cheese)"
+    ]
+  },
+  {
+    "food_name": "samosa",
+    "ingredients": [
+      "wheat wrapper",
+      "potato",
+      "peas",
+      "spices",
+      "oil"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "legumes"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "legumes": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "legumes": [
+        "stomach cramps",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Gluten-free Samosa (rice paper wrapper)"
+    ]
+  },
+  {
+    "food_name": "shawarma",
+    "ingredients": [
+      "wheat wrap",
+      "chicken",
+      "garlic mayo",
+      "yogurt sauce",
+      "lettuce",
+      "tomato"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "egg",
+      "milk",
+      "tomato"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "egg": 1.0,
+      "milk": 1.0,
+      "tomato": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "tomato": [
+        "skin rash",
+        "stomach discomfort"
+      ]
+    },
+    "replacements": [
+      "Shawarma with Gluten-free Wrap (no dairy sauce)"
+    ]
+  },
+  {
+    "food_name": "shrimp_and_grits",
+    "ingredients": [
+      "shrimp",
+      "grits (maize)",
+      "butter",
+      "cheese"
+    ],
+    "allergens": [
+      "shellfish",
+      "milk",
+      "maize"
+    ],
+    "probabilities": {
+      "shellfish": 1.0,
+      "milk": 1.0,
+      "maize": 1.0
+    },
+    "symptoms": {
+      "shellfish": [
+        "hives",
+        "swelling",
+        "wheezing",
+        "anaphylaxis"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "maize": [
+        "stomach cramps",
+        "diarrhea",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Chicken and Grits (no dairy)"
+    ]
+  },
+  {
+    "food_name": "spag",
+    "ingredients": [
+      "spaghetti (wheat)",
+      "tomato sauce",
+      "oil",
+      "salt"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "tomato"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "tomato": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "tomato": [
+        "skin rash",
+        "stomach discomfort"
+      ]
+    },
+    "replacements": [
+      "Gluten-free Spaghetti (rice/millet pasta)"
+    ]
+  },
+  {
+    "food_name": "spring_rolls",
+    "ingredients": [
+      "wheat wrapper",
+      "cabbage",
+      "carrots",
+      "beansprouts",
+      "soy sauce"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "soy"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "soy": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "soy": [
+        "stomach upset",
+        "skin redness",
+        "asthma-like symptoms"
+      ]
+    },
+    "replacements": [
+      "Rice Paper Spring Rolls"
+    ]
+  },
+  {
+    "food_name": "steak",
+    "ingredients": [
+      "beef steak",
+      "salt",
+      "pepper",
+      "butter (optional)"
+    ],
+    "allergens": [
+      "milk"
+    ],
+    "probabilities": {
+      "milk": 1.0
+    },
+    "symptoms": {
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ]
+    },
+    "replacements": [
+      "Grilled Goat Meat"
+    ]
+  },
+  {
+    "food_name": "sushi",
+    "ingredients": [
+      "rice",
+      "nori",
+      "raw fish",
+      "soy sauce",
+      "wasabi",
+      "sesame (optional)"
+    ],
+    "allergens": [
+      "fish",
+      "soy",
+      "sesame"
+    ],
+    "probabilities": {
+      "fish": 1.0,
+      "soy": 1.0,
+      "sesame": 1.0
+    },
+    "symptoms": {
+      "fish": [
+        "hives",
+        "itchy skin",
+        "swelling of lips",
+        "nausea",
+        "vomiting"
+      ],
+      "soy": [
+        "stomach upset",
+        "skin redness",
+        "asthma-like symptoms"
+      ],
+      "sesame": [
+        "hives",
+        "swelling",
+        "shortness of breath",
+        "anaphylaxis"
+      ]
+    },
+    "replacements": [
+      "Vegetable Sushi (no fish, no soy)"
+    ]
+  },
+  {
+    "food_name": "tacos",
+    "ingredients": [
+      "corn tortillas",
+      "beef/chicken",
+      "cheese",
+      "lettuce",
+      "tomato"
+    ],
+    "allergens": [
+      "maize",
+      "milk",
+      "tomato"
+    ],
+    "probabilities": {
+      "maize": 1.0,
+      "milk": 1.0,
+      "tomato": 1.0
+    },
+    "symptoms": {
+      "maize": [
+        "stomach cramps",
+        "diarrhea",
+        "skin rash"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "tomato": [
+        "skin rash",
+        "stomach discomfort"
+      ]
+    },
+    "replacements": [
+      "Corn Tortilla Tacos (no cheese)"
+    ]
+  },
+  {
+    "food_name": "waffles",
+    "ingredients": [
+      "wheat flour",
+      "milk",
+      "egg",
+      "butter",
+      "sugar",
+      "baking powder"
+    ],
+    "allergens": [
+      "wheat",
+      "gluten",
+      "milk",
+      "egg"
+    ],
+    "probabilities": {
+      "wheat": 1.0,
+      "gluten": 1.0,
+      "milk": 1.0,
+      "egg": 1.0
+    },
+    "symptoms": {
+      "wheat": [
+        "skin rash",
+        "digestive discomfort",
+        "runny nose"
+      ],
+      "gluten": [
+        "bloating",
+        "fatigue",
+        "diarrhea"
+      ],
+      "milk": [
+        "diarrhea",
+        "stomach cramps",
+        "skin rash"
+      ],
+      "egg": [
+        "skin rash",
+        "nasal congestion",
+        "vomiting"
+      ]
+    },
+    "replacements": [
+      "Gluten-free Waffles (dairy-free)"
+    ]
+  }
+]

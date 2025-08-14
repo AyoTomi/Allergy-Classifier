@@ -1,0 +1,200 @@
+{
+  "fish": {
+    "category": "seafood",
+    "severity": "moderate",
+    "cross_reactive_allergens": ["shellfish", "stockfish"],
+    "common_symptoms": ["hives", "itchy skin", "swelling of lips", "nausea", "vomiting"],
+    "replacements": ["chicken", "goat meat", "mushrooms"],
+    "suppressants": ["antihistamines", "hydration", "vitamin C-rich fruits"],
+    "justification": "Fish allergy is usually caused by parvalbumin, a heat-stable protein. Antihistamines reduce histamine activity, while vitamin C may help lower histamine levels."
+  },
+  "crayfish": {
+    "category": "seafood",
+    "severity": "moderate",
+    "cross_reactive_allergens": ["shrimp", "lobster", "shellfish"],
+    "common_symptoms": ["skin rash", "stomach cramps", "throat tightness"],
+    "replacements": ["smoked chicken", "mushrooms", "bambara nut paste"],
+    "suppressants": ["hydration", "ginger tea", "mild antihistamines"],
+    "justification": "Crayfish allergy involves tropomyosin proteins. Ginger can ease mild inflammation, and hydration supports toxin clearance."
+  },
+  "shellfish": {
+    "category": "seafood",
+    "severity": "severe",
+    "cross_reactive_allergens": ["crayfish", "shrimp", "lobster", "dust mites"],
+    "common_symptoms": ["hives", "swelling", "wheezing", "anaphylaxis"],
+    "replacements": ["beans", "eggplant", "mushrooms"],
+    "suppressants": ["epinephrine (emergency)", "antihistamines", "ginger water"],
+    "justification": "Shellfish allergy is linked to tropomyosin and can be severe. Epinephrine is essential in anaphylaxis."
+  },
+  "stockfish": {
+    "category": "seafood",
+    "severity": "moderate",
+    "cross_reactive_allergens": ["fish", "shellfish"],
+    "common_symptoms": ["skin itching", "lip swelling", "abdominal pain"],
+    "replacements": ["smoked chicken", "mushrooms"],
+    "suppressants": ["hydration", "vitamin C", "anti-inflammatory foods"],
+    "justification": "Stockfish retains allergenic proteins even after drying; hydration and anti-inflammatory foods may help recovery."
+  },
+  "milk": {
+    "category": "dairy",
+    "severity": "moderate",
+    "cross_reactive_allergens": ["cheese", "yogurt"],
+    "common_symptoms": ["diarrhea", "stomach cramps", "skin rash"],
+    "replacements": ["tigernut milk", "soy milk", "coconut milk"],
+    "suppressants": ["lactase enzyme", "calcium-fortified alternatives"],
+    "justification": "Milk allergy stems from casein and whey proteins. Plant-based milks offer safe alternatives."
+  },
+  "cheese": {
+    "category": "dairy",
+    "severity": "mild",
+    "cross_reactive_allergens": ["milk", "butter"],
+    "common_symptoms": ["bloating", "diarrhea", "skin rash"],
+    "replacements": ["vegan cheese", "nutritional yeast"],
+    "suppressants": ["probiotic drinks", "ginger"],
+    "justification": "Cheese contains casein, which triggers dairy allergies. Probiotics may help restore gut balance."
+  },
+  "egg": {
+    "category": "protein",
+    "severity": "moderate",
+    "cross_reactive_allergens": ["poultry meat"],
+    "common_symptoms": ["skin rash", "nasal congestion", "vomiting"],
+    "replacements": ["chia seed paste", "flaxseed meal", "mashed plantain"],
+    "suppressants": ["vitamin D-rich foods", "rest", "probiotics"],
+    "justification": "Egg allergy involves ovalbumin proteins. Probiotics may reduce gut inflammation."
+  },
+  "peanut": {
+    "category": "nuts",
+    "severity": "severe",
+    "cross_reactive_allergens": ["soy", "tree nuts", "sesame"],
+    "common_symptoms": ["hives", "swelling of lips or face", "difficulty breathing", "anaphylaxis"],
+    "replacements": ["sunflower seed butter", "pumpkin seeds", "bambara nut paste"],
+    "suppressants": ["epinephrine injection (emergency)", "antihistamines", "rest", "hydration"],
+    "justification": "Peanut allergies are IgE-mediated and can be life-threatening. Immediate epinephrine is essential in severe cases."
+  },
+  "soy": {
+    "category": "legumes",
+    "severity": "moderate",
+    "cross_reactive_allergens": ["peanut", "beans", "lentils"],
+    "common_symptoms": ["stomach upset", "skin redness", "asthma-like symptoms"],
+    "replacements": ["bambara nut", "egusi", "beans"],
+    "suppressants": ["vitamin E", "omega-3 oils", "hydration"],
+    "justification": "Soy proteins can trigger IgE and non-IgE responses. Omega-3s help reduce inflammation."
+  },
+  "fermented_legumes": {
+    "category": "fermented foods",
+    "severity": "mild",
+    "cross_reactive_allergens": ["soy", "beans"],
+    "common_symptoms": ["bloating", "skin rash"],
+    "replacements": ["fresh legumes", "non-fermented lentils"],
+    "suppressants": ["hydration", "mild probiotics"],
+    "justification": "Fermentation changes protein structures; some may cause intolerance."
+  },
+  "gluten": {
+    "category": "grains",
+    "severity": "moderate",
+    "cross_reactive_allergens": ["wheat", "barley", "rye"],
+    "common_symptoms": ["bloating", "fatigue", "diarrhea"],
+    "replacements": ["yam flour", "cassava flour", "plantain flour"],
+    "suppressants": ["anti-inflammatory foods", "hydration", "fiber-rich vegetables"],
+    "justification": "Gluten intolerance or celiac disease requires total gluten avoidance."
+  },
+  "wheat": {
+    "category": "grains",
+    "severity": "moderate",
+    "cross_reactive_allergens": ["gluten", "barley", "rye"],
+    "common_symptoms": ["skin rash", "digestive discomfort", "runny nose"],
+    "replacements": ["cassava flour", "rice flour", "millet flour"],
+    "suppressants": ["hydration", "anti-inflammatory foods"],
+    "justification": "Wheat allergy is immune-mediated and distinct from celiac disease."
+  },
+  "sesame": {
+    "category": "seeds",
+    "severity": "severe",
+    "cross_reactive_allergens": ["peanut", "tree nuts"],
+    "common_symptoms": ["hives", "swelling", "shortness of breath", "anaphylaxis"],
+    "replacements": ["pumpkin seeds", "sunflower seeds"],
+    "suppressants": ["epinephrine (emergency)", "antihistamines"],
+    "justification": "Sesame allergies are increasing globally and can cause severe reactions."
+  },
+  "legumes": {
+    "category": "legumes",
+    "severity": "moderate",
+    "cross_reactive_allergens": ["peanut", "soy"],
+    "common_symptoms": ["stomach cramps", "skin rash"],
+    "replacements": ["bambara nut", "lentils", "pumpkin seeds"],
+    "suppressants": ["vitamin C", "omega-3 oils"],
+    "justification": "Some legumes share allergenic proteins with peanuts and soy."
+  },
+  "mustard": {
+    "category": "spices",
+    "severity": "mild",
+    "cross_reactive_allergens": ["cabbage", "broccoli"],
+    "common_symptoms": ["skin redness", "runny nose"],
+    "replacements": ["turmeric", "local pepper mix", "scent leaf"],
+    "suppressants": ["hydration", "plain carbs", "mild antihistamines"],
+    "justification": "Mustard allergy is rare in Nigeria but possible."
+  },
+  "processed_meat": {
+    "category": "meat",
+    "severity": "mild",
+    "cross_reactive_allergens": ["soy additives"],
+    "common_symptoms": ["skin rash", "headache", "bloating"],
+    "replacements": ["grilled turkey", "boiled chicken", "goat meat"],
+    "suppressants": ["hydration", "green vegetables"],
+    "justification": "Processed meats often contain preservatives and soy additives."
+  },
+  "coconut": {
+    "category": "fruit",
+    "severity": "mild",
+    "cross_reactive_allergens": ["tree nuts"],
+    "common_symptoms": ["skin rash", "itchy throat"],
+    "replacements": ["tigernut milk", "soy milk"],
+    "suppressants": ["hydration", "antihistamines"],
+    "justification": "Coconut allergy is rare but documented."
+  },
+  "palm_oil": {
+    "category": "oil",
+    "severity": "mild",
+    "cross_reactive_allergens": [],
+    "common_symptoms": ["stomach upset", "skin redness"],
+    "replacements": ["groundnut oil", "vegetable oil", "sunflower oil"],
+    "suppressants": ["hydration", "anti-inflammatory foods"],
+    "justification": "Palm oil allergy is rare; symptoms often due to processing residues."
+  },
+  "tomato": {
+    "category": "nightshade",
+    "severity": "mild",
+    "cross_reactive_allergens": ["pepper", "potato"],
+    "common_symptoms": ["skin rash", "stomach discomfort"],
+    "replacements": ["carrot puree", "pumpkin puree"],
+    "suppressants": ["antihistamines", "hydration"],
+    "justification": "Tomato allergy may be linked to profilin proteins."
+  },
+  "pepper": {
+    "category": "nightshade",
+    "severity": "mild",
+    "cross_reactive_allergens": ["tomato", "eggplant"],
+    "common_symptoms": ["skin irritation", "nasal congestion"],
+    "replacements": ["scent leaf", "turmeric"],
+    "suppressants": ["hydration", "anti-inflammatory foods"],
+    "justification": "Capsaicin in pepper can trigger allergic-like responses."
+  },
+  "maize": {
+    "category": "grain",
+    "severity": "mild",
+    "cross_reactive_allergens": ["grass pollen"],
+    "common_symptoms": ["stomach cramps", "diarrhea", "skin rash"],
+    "replacements": ["cassava flour", "millet flour"],
+    "suppressants": ["hydration", "antihistamines"],
+    "justification": "Maize allergy is uncommon but possible."
+  },
+  "cashew": {
+    "category": "nuts",
+    "severity": "severe",
+    "cross_reactive_allergens": ["peanut", "pistachio"],
+    "common_symptoms": ["hives", "swelling", "difficulty breathing", "anaphylaxis"],
+    "replacements": ["pumpkin seeds", "sunflower seeds"],
+    "suppressants": ["epinephrine (emergency)", "antihistamines"],
+    "justification": "Cashew nut allergy can cause life-threatening reactions."
+  }
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Allergy Classifier</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .upload-area {
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            width: 100%;
+            height: 200px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #f9f9f9;
+        }
+        .upload-area.dragover {
+            border-color: #007cba;
+            background-color: #e1f5fe;
+        }
+        img {
+            max-width: 300px;
+            max-height: 300px;
+            margin: 10px;
+        }
+        .results {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+        }
+        .allergen-warning {
+            background-color: #ffe6e6;
+            border: 2px solid #ff0000;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .allergen-safe {
+            background-color: #e6ffe6;
+            border: 2px solid #00aa00;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        input[type="text"] {
+            padding: 8px;
+            margin: 5px;
+            width: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007cba;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005a8b;
+        }
+    </style>
+</head>
+<body>
+    <h1>🍽️ Food Allergy Classifier</h1>
+    <p>Upload an image of food to identify it and check for allergens.</p>
+
+    <div>
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" value="2" placeholder="Enter User ID">
+    </div>
+
+    <div class="upload-area" id="uploadArea">
+        <p>📸 Click here or drag and drop an image</p>
+        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+    </div>
+
+    <div id="imagePreview"></div>
+    
+    <button id="predictBtn" style="display: none;">🔍 Analyze Food</button>
+    
+    <div id="results" class="results" style="display: none;">
+        <h3>Analysis Results</h3>
+        <div id="prediction"></div>
+        <div id="allergenCheck"></div>
+    </div>
+
+    <script>
+        // Nigerian food labels (sorted alphabetically as in Python)
+        const LABELS = [
+            "Abacha and Ugba(african salad)",
+            "Akara",
+            "Amala",
+            "Banga soup",
+            "Beans and Plantain",
+            "Bitter leaf soup",
+            "Chicken stew",
+            "Dodo (fried plantain)",
+            "Eba",
+            "Egusi soup",
+            "Fish stew",
+            "Fried rice",
+            "Fufu",
+            "Gbegiri soup",
+            "Jollof rice",
+            "Moi moi",
+            "Nkwobi",
+            "Nsala soup",
+            "Ofe nsala (white soup)",
+            "Ogbono soup",
+            "Okra soup",
+            "Pepper soup",
+            "Pounded yam",
+            "Suya",
+            "Tuwo shinkafa",
+            "Vegetable soup",
+            "Yam porridge"
+        ];
+
+        // Food ingredients and allergens data
+        const INGREDIENT_DATA = [
+            {
+                "food_name": "Abacha and Ugba(african salad)",
+                "ingredients": ["cassava flakes (abacha)", "ugba (oil bean)", "palm oil", "potash", "ground crayfish", "shredded stockfish", "garden egg", "utazi leaves", "onions", "ground pepper", "salt", "seasoning cube"],
+                "allergens": ["legumes", "crayfish", "stockfish"]
+            },
+            {
+                "food_name": "Akara",
+                "ingredients": ["black-eyed beans", "onions", "pepper", "salt", "palm oil"],
+                "allergens": ["legumes"]
+            },
+            {
+                "food_name": "Jollof rice",
+                "ingredients": ["rice", "tomatoes", "onions", "pepper", "chicken stock", "bay leaves", "curry powder", "thyme", "salt", "palm oil"],
+                "allergens": ["none"]
+            },
+            {
+                "food_name": "Egusi soup",
+                "ingredients": ["melon seeds", "spinach", "meat", "stockfish", "palm oil", "onions", "pepper", "seasoning"],
+                "allergens": ["nuts/seeds", "stockfish"]
+            },
+            {
+                "food_name": "Suya",
+                "ingredients": ["beef", "suya spice", "groundnuts", "ginger", "garlic", "pepper"],
+                "allergens": ["nuts/seeds"]
+            }
+        ];
+
+        // User health data simulation
+        const HEALTH_DATA = [
+            { user_id: "1", food_type: "nuts", allergic: 1 },
+            { user_id: "2", food_type: "dairy", allergic: 1 },
+            { user_id: "3", food_type: "shellfish", allergic: 1 },
+            { user_id: "4", food_type: "gluten", allergic: 0 }
+        ];
+
+        // Allergen category mapping
+        const ALLERGEN_CATEGORY_MAP = {
+            "legumes": "legumes",
+            "crayfish": "shellfish", 
+            "stockfish": "fish",
+            "nuts/seeds": "nuts",
+            "dairy": "dairy",
+            "gluten": "gluten"
+        };
+
+        let model = null;
+        let currentImage = null;
+
+        // Load model (placeholder - you would need the actual converted model)
+        async function loadModel() {
+            try {
+                // This would load your converted TensorFlow.js model
+                // model = await tf.loadLayersModel('./tfjs_model/model.json');
+                console.log('Model loading simulation (replace with actual model path)');
+                return true;
+            } catch (error) {
+                console.error('Error loading model:', error);
+                return false;
+            }
+        }
+
+        // File handling
+        const fileInput = document.getElementById('fileInput');
+        const uploadArea = document.getElementById('uploadArea');
+        const imagePreview = document.getElementById('imagePreview');
+        const predictBtn = document.getElementById('predictBtn');
+        const results = document.getElementById('results');
+
+        uploadArea.addEventListener('click', () => fileInput.click());
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFile(files[0]);
+            }
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleFile(e.target.files[0]);
+            }
+        });
+
+        function handleFile(file) {
+            if (file.type.startsWith('image/')) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    currentImage = e.target.result;
+                    imagePreview.innerHTML = `<img src="${currentImage}" alt="Uploaded food">`;
+                    predictBtn.style.display = 'block';
+                    results.style.display = 'none';
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Simulate food prediction (replace with actual model prediction)
+        function simulatePrediction() {
+            // Simulate model prediction
+            const randomIndex = Math.floor(Math.random() * LABELS.length);
+            const confidence = 0.7 + Math.random() * 0.25; // Random confidence between 0.7-0.95
+            return {
+                food: LABELS[randomIndex],
+                confidence: confidence
+            };
+        }
+
+        // Get ingredients and allergens for a food
+        function getIngredientsAndAllergens(foodName) {
+            const entry = INGREDIENT_DATA.find(item => 
+                item.food_name.toLowerCase() === foodName.toLowerCase()
+            );
+            return entry ? {
+                ingredients: entry.ingredients,
+                allergens: entry.allergens
+            } : {
+                ingredients: [],
+                allergens: []
+            };
+        }
+
+        // Check user allergy
+        function checkUserAllergy(userId, allergens) {
+            const userHealth = HEALTH_DATA.find(user => user.user_id === userId);
+            
+            if (!userHealth) {
+                return {
+                    message: `❌ User ID ${userId} not found.`,
+                    isAllergic: false,
+                    allergyCategory: null
+                };
+            }
+
+            const allergyCategory = userHealth.food_type;
+            const isAllergic = userHealth.allergic === 1;
+
+            if (!isAllergic) {
+                return {
+                    message: "✅ No known allergies for this user.",
+                    isAllergic: false,
+                    allergyCategory: null
+                };
+            }
+
+            // Check if any food allergens match user's allergy category
+            const foodAllergenClasses = allergens.map(a => 
+                ALLERGEN_CATEGORY_MAP[a.toLowerCase()] || "unknown"
+            );
+
+            const hasMatchingAllergen = foodAllergenClasses.includes(allergyCategory);
+
+            if (hasMatchingAllergen) {
+                const matchedAllergens = allergens.filter(a => 
+                    ALLERGEN_CATEGORY_MAP[a.toLowerCase()] === allergyCategory
+                );
+                return {
+                    message: `⚠️ User is allergic to ${allergyCategory}, and this food contains: ${matchedAllergens.join(', ')}`,
+                    isAllergic: true,
+                    allergyCategory: allergyCategory,
+                    matchedAllergens: matchedAllergens
+                };
+            } else {
+                return {
+                    message: `⚠️ User has an allergy to ${allergyCategory}, but this food contains different allergen classes: ${[...new Set(foodAllergenClasses)].join(', ')}`,
+                    isAllergic: true,
+                    allergyCategory: allergyCategory
+                };
+            }
+        }
+
+        // Main prediction function
+        predictBtn.addEventListener('click', async () => {
+            if (!currentImage) return;
+
+            const userId = document.getElementById('userId').value;
+            
+            // Show loading
+            results.style.display = 'block';
+            document.getElementById('prediction').innerHTML = '<p>🔄 Analyzing image...</p>';
+            
+            // Simulate prediction (replace with actual model prediction)
+            setTimeout(() => {
+                const prediction = simulatePrediction();
+                const { ingredients, allergens } = getIngredientsAndAllergens(prediction.food);
+                const allergyCheck = checkUserAllergy(userId, allergens);
+
+                // Display prediction results
+                document.getElementById('prediction').innerHTML = `
+                    <h4>🍽️ Predicted Food: ${prediction.food}</h4>
+                    <p><strong>Confidence:</strong> ${(prediction.confidence * 100).toFixed(2)}%</p>
+                    <p><strong>Ingredients:</strong> ${ingredients.join(', ') || 'Not available'}</p>
+                    <p><strong>Potential Allergens:</strong> ${allergens.join(', ') || 'None detected'}</p>
+                `;
+
+                // Display allergy check results
+                const allergenDiv = document.getElementById('allergenCheck');
+                if (allergyCheck.isAllergic && allergyCheck.matchedAllergens) {
+                    allergenDiv.innerHTML = `
+                        <div class="allergen-warning">
+                            <h4>⚠️ ALLERGY WARNING</h4>
+                            <p>${allergyCheck.message}</p>
+                            <p><strong>Recommendation:</strong> Avoid consuming this food!</p>
+                        </div>
+                    `;
+                } else if (allergyCheck.isAllergic) {
+                    allergenDiv.innerHTML = `
+                        <div class="allergen-safe">
+                            <h4>ℹ️ Allergy Information</h4>
+                            <p>${allergyCheck.message}</p>
+                        </div>
+                    `;
+                } else {
+                    allergenDiv.innerHTML = `
+                        <div class="allergen-safe">
+                            <h4>✅ Safe to Consume</h4>
+                            <p>${allergyCheck.message}</p>
+                        </div>
+                    `;
+                }
+            }, 1500);
+        });
+
+        // Initialize
+        loadModel().then(success => {
+            if (success) {
+                console.log('Model loaded successfully');
+            } else {
+                console.log('Using simulation mode (model not loaded)');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@echo off
+echo 🚀 Starting Food Allergy Classifier API...
+echo.
+echo Installing dependencies...
+pip install -r requirements.txt
+echo.
+echo Starting Flask API server...
+python app.py
+pause
